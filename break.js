@@ -65,12 +65,27 @@
 // let password = "admin";
 // console.log(password === "admi");
 
-let age = 18;
-console.log(age > 16);
+// let age = 18;
+// console.log(age > 16);
 
-let marks = 90;
-console.log(marks > 80 && marks < 100);
+// let marks = 90;
+// console.log(marks > 80 && marks < 100);
 
-let password = "admin";
-console.log(password ==="admin");
+// let password = "admin";
+// console.log(password ==="admin");
 
+let number = 41;
+if(number % 2 !==0){
+    console.log("odd number")
+}else{
+    console.log("even number");
+}
+
+let age = 18
+if(age >= 18 && age <= 30){
+    console.log("Eligible");
+}else{
+    console.log("Not Eligible");   
+}
+
+console.log( 20 > 30 );
