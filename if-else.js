@@ -105,3 +105,52 @@ switch (nums) {
   default:
     console.log("done");
 }
+
+let number = "3";
+switch (number) {
+  case 3:
+    console.log("number");
+    break;
+  case "3":
+    console.log("string");
+    break;
+  default:
+    console.log("done");
+}
+
+let day = 4;
+switch (day) {
+  case 2:
+    console.log("sunday");
+    break;
+  case 3:
+    console.log("monday");
+    break;
+  case 4:
+    console.log("tuesday");
+    break;
+  case 5:
+    console.log("fryday");
+    break;
+  default:
+    console.log("done");
+}
+
+let grade = "a";
+switch (grade) {
+  case "a":
+    console.log("exclent");
+    break;
+  case "b":
+    console.log("good");
+    break;
+  case "c":
+    console.log("average");
+    break;
+  case "d":
+    console.log("poor");
+    break;
+  default:
+    console.log("fail");
+    break;
+}
