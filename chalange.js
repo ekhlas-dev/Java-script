@@ -106,12 +106,39 @@
 
 // Temperature
 
-let temp = 25;
+// let temp = 25;
 
-if(temp <14){
-    console.log("cold")
-}else if(temp >= 15 && temp <= 30){
-    console.log("normal")
-}else {
-    console.log("hot")
-}
+// if (temp < 14) {
+//   console.log("cold");
+// } else if (temp >= 15 && temp <= 30) {
+//   console.log("normal");
+// } else {
+//   console.log("hot");
+// }
+
+// Login System
+
+// let username = "admin";
+// let password = "12345";
+
+// if (username === "admin" && password === "12345") {
+//   console.log("Login Successful");
+// } else {
+//   console.log("Invalid Username or Password");
+// }
+
+// BMI Calculator
+
+// let weight = 902;
+// let height = 1.75;
+// let BMI = weight / (height * height);
+// let bmiSort = BMI.toFixed(2)
+// if (bmiSort < 18.5) {
+//   console.log("UnderWeight");
+// } else if (bmiSort >= 18.5 && bmiSort <= 24.9) {
+//   console.log("Normal");
+// } else if (bmiSort >= 25 && bmiSort <= 29.9) {
+//   console.log("OverWeight");
+// } else {
+//   console.log("Obese");
+// }
