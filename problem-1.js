@@ -168,17 +168,45 @@
 // }
 // console.log(countViowel("hellow bangladesh tomaka valobashi"));
 
-function vweoilCount(word) {
-  let vowel = "aeiou";
-  let count = 0;
-  for (let i = 0; i < word.length; i++) {
-    let letter = word[i];
-    console.log(letter)
-    if (vowel.includes(letter)) {
-      console.log("vowel =>",i);
-      count ++
+// function vweoilCount(word) {
+//   let vowel = "aeiou";
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     let letter = word[i];
+//     console.log(letter)
+//     if (vowel.includes(letter)) {
+//       console.log("vowel =>",i);
+//       count ++
+//     }
+//   }
+//   return count
+// }
+// console.log(vweoilCount("hellow world"))
+
+// function isPalindrone(value) {
+//   let reverseLetter = "";
+//   for (let i = value.length - 1; i >= 0; i--) {
+//     let letter = value[i];
+//     console.log(letter);
+//     reverseLetter += letter;
+//   }
+//   if (value === reverseLetter) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPalindrone("civic"));
+
+function isPalindrone(value) {
+    let revercevalue = ""
+    for(let i = value.length -1; i>=0; i--){
+        revercevalue +=value[i]
     }
-  }
-  return count
+    if(value === revercevalue){
+        return true
+    }else{
+        return false
+    }
 }
-console.log(vweoilCount("hellow world"))
+console.log(isPalindrone("civic"))
