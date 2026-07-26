@@ -34,34 +34,110 @@
 
 //  fizz buzz problem
 
-function FizzBuzz(number) {
-  for (let i = 1; i <= number; i++) {
-    console.log("=>>", i);
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("fizzbuzz");
-    } else if (i % 3 === 0) {
-      console.log("fizz");
-    } else if (i % 5 === 0) {
-      console.log("buzz");
-    } else {
-      console.log(i);
-    }
-  }
-  return "done"
-  
-}
-console.log(FizzBuzz(16));
+// function FizzBuzz(number) {
+//   for (let i = 1; i <= number; i++) {
+//     console.log("=>>", i);
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("fizzbuzz");
+//     } else if (i % 3 === 0) {
+//       console.log("fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+//   return "done"
 
-const number = 16;
-for (let i = 1; i <= number; i++) {
-  console.log("=>", i);
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
+// }
+// console.log(FizzBuzz(16));
+
+// const number = 16;
+// for (let i = 1; i <= number; i++) {
+//   console.log("=>", i);
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// reverse a string
+// let str = "bangladesh"
+// let reverseWord = "";
+// for(i = str.length; i>=0; i--){
+//     let latter = str[i]
+//     console.log(latter)
+//     reverseWord +=latter
+// }
+// console.log(reverseWord)
+
+// function reverse(word) {
+//   let reverseWord = "";
+//   for (let i = word.length; i >= 0; i--) {
+//     let letter = word[i];
+//     console.log(i,letter)
+//     reverseWord += letter;
+//   }
+//   return reverseWord;
+// }
+// console.log(reverse("bangladesh"))
+
+// function reverse(word) {
+//   let reverseWord = "";
+
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     let letter = word[i];
+//     reverseWord += letter;
+//   }
+
+//   return reverseWord;
+// }
+
+// console.log(reverse("bangladesh"));
+
+// let arr = [1,2,3,4,5,6]
+// console.log(arr.reverse())
+
+let str = "bangladesh";
+let reverseWord = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  let letter = str[i];
+  reverseWord += letter;
 }
+console.log(reverseWord)
+
+let str = "bangladesh";
+let wordReverse = "";
+for (i = str.length - 1; i >= 0; i--) {
+  let latter = str[i];
+  wordReverse += latter;
+}
+console.log(wordReverse)
+
+function wordReverce(word) {
+  let reverseWord = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    let letter = word[i];
+    reverseWord += letter;
+  }
+  return reverseWord;
+}
+console.log(wordReverce("bangladesh"));
+
+function reverceWordCount(word) {
+  let reverletter = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    let letter = word[i];
+    reverletter += letter;
+  }
+  return reverletter
+}
+console.log(reverceWordCount("hellow bangladesh"));
+
+let arr = [1,2,3,4,5,6]
+console.log(arr.length)
