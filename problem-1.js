@@ -103,41 +103,82 @@
 // let arr = [1,2,3,4,5,6]
 // console.log(arr.reverse())
 
-let str = "bangladesh";
-let reverseWord = "";
-for (let i = str.length - 1; i >= 0; i--) {
-  let letter = str[i];
-  reverseWord += letter;
-}
-console.log(reverseWord)
+// let str = "bangladesh";
+// let reverseWord = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   let letter = str[i];
+//   reverseWord += letter;
+// }
+// console.log(reverseWord)
 
-let str = "bangladesh";
-let wordReverse = "";
-for (i = str.length - 1; i >= 0; i--) {
-  let latter = str[i];
-  wordReverse += latter;
-}
-console.log(wordReverse)
+// let str = "bangladesh";
+// let wordReverse = "";
+// for (i = str.length - 1; i >= 0; i--) {
+//   let latter = str[i];
+//   wordReverse += latter;
+// }
+// console.log(wordReverse)
 
-function wordReverce(word) {
-  let reverseWord = "";
-  for (let i = word.length - 1; i >= 0; i--) {
+// function wordReverce(word) {
+//   let reverseWord = "";
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     let letter = word[i];
+//     reverseWord += letter;
+//   }
+//   return reverseWord;
+// }
+// console.log(wordReverce("bangladesh"));
+
+// function reverceWordCount(word) {
+//   let reverletter = "";
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     let letter = word[i];
+//     reverletter += letter;
+//   }
+//   return reverletter
+// }
+// console.log(reverceWordCount("hellow bangladesh"));
+
+// problem: vowels in a string
+
+// let str = "hellow bangladesh kemon aco";
+// let vowels = "aeiou";
+// let count = 0;
+// for (i = 0; i <= str.length; i++) {
+//   let letter = str[i];
+//   if (vowels.includes(letter)) {
+//     console.log(vowels);
+//     count++;
+//   }
+
+// }
+// console.log(count);
+
+// function countViowel(word) {
+//   let vowels = "aeiou";
+//   let count = 0;
+//   for (let i = 0; i <= word.length; i++) {
+//     let letter = word[i];
+//     if (vowels.includes(letter)) {
+//       console.log("vowels");
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countViowel("hellow bangladesh tomaka valobashi"));
+
+function vweoilCount(word) {
+  let vowel = "aeiou";
+  let count = 0;
+  for (let i = 0; i < word.length; i++) {
     let letter = word[i];
-    reverseWord += letter;
+    console.log(letter)
+    if (vowel.includes(letter)) {
+      console.log("vowel =>",i);
+      count ++
+    }
   }
-  return reverseWord;
+  return count
 }
-console.log(wordReverce("bangladesh"));
-
-function reverceWordCount(word) {
-  let reverletter = "";
-  for (let i = word.length - 1; i >= 0; i--) {
-    let letter = word[i];
-    reverletter += letter;
-  }
-  return reverletter
-}
-console.log(reverceWordCount("hellow bangladesh"));
-
-let arr = [1,2,3,4,5,6]
-console.log(arr.length)
+console.log(vweoilCount("hellow world"))
