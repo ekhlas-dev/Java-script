@@ -116,19 +116,35 @@ const student = {
   depertment: "cse",
 };
 
-function objPreration(obj){
-  for(let key in obj){
-    console.log(key)
+function objPreration(obj) {
+  for (let key in obj) {
+    console.log(key);
   }
-  for(let key in obj){
-    console.log(obj[key])
+  for (let key in obj) {
+    console.log(obj[key]);
   }
-  for(let key in obj){
-    console.log(key, ": ", obj[key])
+  for (let key in obj) {
+    console.log(key, ": ", obj[key]);
   }
-  let objectKeyCount = Object.keys(obj).length
-  console.log("Toatal Properties: ",objectKeyCount)
-  let HasEmailProperty = obj.hasOwnProperty("email")
-  console.log("has email: ",HasEmailProperty)
+  let objectProperties = Object.keys(obj).length;
+  console.log("Total Properties: ", objectProperties);
+  let hasEmail = obj.hasOwnProperty("email");
+  console.log("Has Email: ", hasEmail);
 }
-objPreration(student)
+objPreration(student);
+// function objPreration(obj){
+//   for(let key in obj){
+//     console.log(key)
+//   }
+//   for(let key in obj){
+//     console.log(obj[key])
+//   }
+//   for(let key in obj){
+//     console.log(key, ": ", obj[key])
+//   }
+//   let objectKeyCount = Object.keys(obj).length
+//   console.log("Toatal Properties: ",objectKeyCount)
+//   let HasEmailProperty = obj.hasOwnProperty("email")
+//   console.log("has email: ",HasEmailProperty)
+// }
+// objPreration(student)
