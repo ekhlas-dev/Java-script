@@ -81,14 +81,54 @@
 
 // with function
 
-function filterLargeValue(arr) {
-    let value = 70;
-    let largeValue = [];
-  for (let i = 0; i < arr.length; i++) {
-        if(arr[i] > value){
-            largeValue.push(arr[i])
-        }
+// function filterLargeValue(arr) {
+//   let value = 70;
+//   let largeValue = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > value) {
+//       largeValue.push(arr[i]);
+//     }
+//   }
+//   return largeValue;
+// }
+// console.log(
+//   filterLargeValue([20, 34, 67, 87, 89, 86, 54, 79, 97, 82, 81, 95, 70, 72]),
+// );
+
+// problem 13 => loop through an object properties
+
+// let monitor = {
+//   color: "block",
+//   brand: "lg",
+//   display: "something",
+//   size: "something",
+// };
+// for (let key in monitor) {
+//   console.log(key, ": ", monitor[key]);
+// }
+
+// problem 14:
+
+const student = {
+  name: "ekhals uddin",
+  age: 25,
+  university: "DIU",
+  depertment: "cse",
+};
+
+function objPreration(obj){
+  for(let key in obj){
+    console.log(key)
   }
-  return largeValue;
+  for(let key in obj){
+    console.log(obj[key])
+  }
+  for(let key in obj){
+    console.log(key, ": ", obj[key])
+  }
+  let objectKeyCount = Object.keys(obj).length
+  console.log("Toatal Properties: ",objectKeyCount)
+  let HasEmailProperty = obj.hasOwnProperty("email")
+  console.log("has email: ",HasEmailProperty)
 }
-console.log(filterLargeValue([20, 34, 67, 87, 89, 86, 54, 79, 97, 82, 81, 95, 70, 72]))
+objPreration(student)
