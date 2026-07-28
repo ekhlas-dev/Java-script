@@ -197,17 +197,31 @@ let country = "Bangladesh";
 // }
 // one();
 
-let a = 1;
+// let a = 1;
 
-function outer() {
-  let a = 2;
+// function outer() {
+//   let a = 2;
 
-  function inner() {
-    console.log(a);
-  }
+//   function inner() {
+//     console.log(a);
+//   }
 
-  return inner;
-}
+//   return inner;
+// }
 
-const fn = outer();
-fn();
+// const fn = outer();
+// fn();
+
+// console.log(city);
+
+// var city = "Dhaka";
+
+console.log(x);
+
+var x = 50;
+
+console.log(x);
+
+console.log(y);
+
+let y = 100;
