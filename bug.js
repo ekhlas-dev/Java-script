@@ -37,73 +37,177 @@
 
 // // console.log(name);
 
-function sum() {
-  let a = 10;
-  let b = 20;
+// function sum() {
+//   let a = 10;
+//   let b = 20;
 
-  console.log(a + b);
-}
+//   console.log(a + b);
+// }
 
-sum();
+// sum();
 
-// console.log(a);
+// // console.log(a);
 
-function myFunction() {
-  var a = 10;
+// function myFunction() {
+//   var a = 10;
 
-  if (true) {
-    var b = 20;
-    let c = 30;
-  }
+//   if (true) {
+//     var b = 20;
+//     let c = 30;
+//   }
 
-  console.log(a); // 10
-  console.log(b); // 20
-  console.log(c); // ❌ Error
-}
+//   console.log(a); // 10
+//   console.log(b); // 20
+//   console.log(c); // ❌ Error
+// }
 
-myFunction();
+// myFunction();
 
-function test() {
-  const age = 26;
-  console.log(age); // ✅ 26
-}
- console.log(age);
+// function test() {
+//   const age = 26;
+//   console.log(age); // ✅ 26
+// }
+//  console.log(age);
 
-test();
+// test();
 
-console.log(age); // ❌ ReferenceError
+// console.log(age); // ❌ ReferenceError
 
-function demo() {
-  if (true) {
-    var a = 10;
-    let b = 20;
-    const c = 30;
-    console.log(b); // ❌ Error
-    console.log(c); // ❌ Error
-  }
+// function demo() {
+//   if (true) {
+//     var a = 10;
+//     let b = 20;
+//     const c = 30;
+//     console.log(b); // ❌ Error
+//     console.log(c); // ❌ Error
+//   }
 
-  console.log(a); // ✅ 10
-}
+//   console.log(a); // ✅ 10
+// }
 
-demo();
+// demo();
 
-var a = 10;
-let b = 20;
-const c = 30;
+// var a = 10;
+// let b = 20;
+// const c = 30;
 
-console.log(window.a); // ✅ 10
-console.log(window.b); // ❌ undefined
-console.log(window.c); // ❌ undefined
+// console.log(window.a); // ✅ 10
+// console.log(window.b); // ❌ undefined
+// console.log(window.c); // ❌ undefined
 
-let a = 100;
+// let a = 100;
 
-function one() {
-  function two() {
+// function one() {
+//   function two() {
+//     console.log(a);
+//   }
+
+//   two();
+// }
+
+// one();
+
+let country = "Bangladesh";
+
+// function one() {
+
+//   let district = "Sirajganj";
+
+//   function two() {
+
+//     let village = "Panchila";
+
+//     console.log(country);
+
+//     console.log(village);
+
+//   }
+
+//   two();
+//   console.log(district);
+// }
+
+// one();
+
+// let name = "Aklas";
+
+// function one() {
+
+//   let age = 26;
+
+//   function two() {
+//     console.log(name);
+//     console.log(age);
+//   }
+
+//   two();
+
+// }
+
+// one();
+
+// if (true){
+//     var a = 10;
+// }
+// console.log(a)
+
+// let x = 5;
+// function one(){
+//     console.log(x)
+// }
+// one()
+
+// function one(){
+//     let x = 100;
+//     function two(){
+//         console.log(x)
+//     }
+//     two()
+// }
+// one()
+
+// function one() {
+//   let a = 10;
+
+//   function two() {
+//     let b = 20;
+//   }
+
+//   console.log(a);
+// }
+
+// one();
+
+// let x = 10
+// function one (){
+//     console.log(x)
+//     function two(){
+//         let x = 20
+//         two()
+//     }
+// }
+// two()
+// let x = 10;
+// function one() {
+//   function two() {
+//     console.log(x);
+//   }
+//   let x = 20;
+//   two();
+// }
+// one();
+
+let a = 1;
+
+function outer() {
+  let a = 2;
+
+  function inner() {
     console.log(a);
   }
 
-  two();
+  return inner;
 }
 
-one();
-
+const fn = outer();
+fn();
