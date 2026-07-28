@@ -148,3 +148,8 @@ objPreration(student);
 //   console.log("has email: ",HasEmailProperty)
 // }
 // objPreration(student)
+
+
+// Problem 15: return all even number then thair sum 
+
+  
