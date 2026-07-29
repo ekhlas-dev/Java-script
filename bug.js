@@ -216,12 +216,34 @@ let country = "Bangladesh";
 
 // var city = "Dhaka";
 
-console.log(x);
+// console.log(x);
 
-var x = 50;
+// var x = 50;
 
-console.log(x);
+// console.log(x);
 
-console.log(y);
+// console.log(y);
 
-let y = 100;
+// let y = 100;
+
+// function sumArray(number) {
+//   let total = 0;
+//   for (let i = 0; i < number.length; i++) {
+//     total += number(number[i].toFiexd(2));
+//   }
+//   return total;
+// }
+// console.log(sumArray([10, 20, 998, 78]));
+
+// What is the output of the following code?
+
+let age = 18;
+if (age > 18) {
+ console.log("Adult");
+} else {
+ console.log("Minor");
+}
+function add(a, b) {
+ return a + b;
+}
+console.log(add(5));
