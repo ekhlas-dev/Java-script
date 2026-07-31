@@ -51,12 +51,63 @@ function calculateAiCost(tokensUsed) {
   let chargeableBlock = Math.floor(extraToken / 100);
   return chargeableBlock * 5;
 }
-console.log(calculateAiCost(300))
-console.log(calculateAiCost(500))
-console.log(calculateAiCost(650))
-console.log(calculateAiCost(1000))
-console.log(calculateAiCost(-10))
-console.log(calculateAiCost("500"))
+// console.log(calculateAiCost(300))
+// console.log(calculateAiCost(500))
+// console.log(calculateAiCost(650))
+// console.log(calculateAiCost(1000))
+// console.log(calculateAiCost(-10))
+// console.log(calculateAiCost("500"))
 
+// problem : 4
 
+function topRatedRestaurant(restaurants) {
+  if (!Array.isArray(restaurants) || restaurants.length === 0) {
+    return "Invalid";
+  }
 
+  let topRestaurant = restaurants[0];
+
+  for (let i = 1; i < restaurants.length; i++) {
+    if (restaurants[i].rating > topRestaurant.rating) {
+      topRestaurant = restaurants[i];
+    }
+  }
+
+  return topRestaurant.name.toUpperCase();
+}
+
+// console.log(topRatedRestaurant([{name:"Chillox",rating:4.5},{name:"Sultan's Dine",rating:4.8}]))
+// console.log(topRatedRestaurant([{name:"KFC",rating:4.2},{name:"Pizza Hut",rating:4.6}]))
+// console.log(topRatedRestaurant([]))
+// console.log(topRatedRestaurant("restaurants"))
+
+// problem : 5
+
+function averageResponseTime(times) {
+  if (!Array.isArray(times)) {
+    return "Invalid";
+  }
+
+  if (times.length === 0) {
+    return "Invalid";
+  }
+
+  for (let i = 0; i < times.length; i++) {
+    if (typeof times[i] !== "number") {
+      return "Invalid";
+    }
+  }
+
+  let total = 0;
+
+  for (let i = 0; i < times.length; i++) {
+    total += times[i];
+  }
+
+  return total / times.length;
+}
+console.log(averageResponseTime([120, 200, 150, 130]));
+console.log(averageResponseTime([100, 100]));
+console.log(averageResponseTime([]));
+console.log(averageResponseTime("logs"));
+console.log(averageResponseTime([120, "200", 150]));
